@@ -1,11 +1,12 @@
-import contactGoose from './assets/gooseContact.jpg';
+import battleshipSnip from './assets/battleshipsnip.png';
 
 const projectCardData = [];
 
 //factory fucntion outputting JSON keyed pair in array
 // { "name": "goose",
 //    "imageURL": "./assets/gooseContact.jpg", - now adjusted to imported image object
-//    "projectURL": "https://dwcarey.github.io/battleship/"
+//    "projectURL": "https://dwcarey.github.io/battleship/
+//      ADD CODE URL - github
 // }
 
 const createCardObject = (projectName, imageURL, projectURL) => {
@@ -19,6 +20,6 @@ const createCardObject = (projectName, imageURL, projectURL) => {
     return projectCardData;
 }
 
-const gooseTest = createCardObject('Goose', contactGoose, "https://dwcarey.github.io/battleship/");
+const battleshipData = createCardObject('Battleship', battleshipSnip, "https://dwcarey.github.io/battleship/");
 
 export default projectCardData;

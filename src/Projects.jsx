@@ -11,10 +11,13 @@ function Projects() {
     <div>
         <h1>Projects</h1>
         <ul>
-            {projectCardData.map((goose, index) => (
-                <li key={index} onClick={() => handleClick(goose.projectURL)}>
-                    <h3>{goose.projectName}</h3>
-                    <img src={goose.imageURL} alt={goose.projectName} />
+            {projectCardData.map((project, index) => (
+                <li key={index} onClick={() => handleClick(project.projectURL)}>
+                    <h3>{project.projectName}</h3>
+                    <img src={project.imageURL} alt={project.projectName} />
+
+                    {/*consider adding a link to github and project using
+                    two different icons and click handlers  */}
                 </li>
             ))}
         </ul>
