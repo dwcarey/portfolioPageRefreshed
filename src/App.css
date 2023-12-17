@@ -28,6 +28,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .headerContainer {
@@ -53,6 +54,23 @@ img {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.projectImage {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  grid-area: b;
+}
+
+.projectNameText {
+  grid-area: a;
+}
+
+.github {
+  grid-area: d;
+}
+
+.openNew {
+  grid-area: e;
+}
+
 h1 {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -74,6 +92,7 @@ h2 {
   font-family: 'Playfair';
   font-size: 2rem;
   color: var(--name-colour);
+  text-align: center;
 }
 
 h3 {
@@ -121,10 +140,17 @@ h4 {
   padding: 5%;
 }
 
-.projectsContainer {
-  height: 40%;
-  background-color: rgb(59, 59, 112);
+.projectListItem{
+  display: grid;
+  grid-template-areas: 
+  "a a a"
+  "b b b"
+  "b b b"
+  "c d e";
+  justify-items: center;
 }
+
+
 
 .contactContainer {
   display: grid;
