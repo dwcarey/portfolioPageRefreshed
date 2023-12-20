@@ -8,7 +8,7 @@ function Contact() {
   return (
     <>
     <div className='contactContainer section'>
-        <h2>Contact Me</h2>
+        <h2 className='contactTitle'>Contact Me</h2>
         <h3>Please get in touch if you have some bread!</h3>
         <h4>1234 The Lake</h4>
         <h4>Large Lake, Lake, 9999</h4>

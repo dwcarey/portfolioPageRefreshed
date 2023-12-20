@@ -1,3 +1,68 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @font-face {
   font-family: 'Roboto';
   src: url('./assets/Roboto-Regular.ttf');
@@ -10,9 +75,10 @@
 
 :root{
   --main-white: rgb(255, 255, 255);
-  --main-blue: rgb(42, 161, 240);
+  --main-blue: hsl(204, 87%, 55%);
   --name-colour: rgb(12, 12, 53);
 }
+
 
 .appContainer {
   width: 100dvw;
@@ -172,4 +238,91 @@ h4 {
   grid-row-start: 9;
   grid-row-end: 10;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@media only screen and (min-width: 720px) {
+
+  body {
+    margin: 0;
+    background: linear-gradient( 165deg, var(--main-blue) 50%, var(--main-white) 40%);
+    z-index: 0;
+    background-repeat: no-repeat;
+  }
+
+  .socialHeader {
+    display: none;
+  }
+
+  .headerContainer {
+    display:block
+  }
+
+  .profilePicture {
+    width: 55%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    z-index: 3;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    color: var(--main-white);
+    position: absolute;
+    margin-top: 0.8rem;
+    display: flex;
+    right: 4rem;
+    z-index: 4;
+  }
+
+  .aboutMeContainer {
+    background-color: var(--main-white);
+    padding: 5%;
+    padding-top: 2%;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 12%;
+    z-index: 2;
+  }
+
+  .aboutMeText {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .aboutMeTitle {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+  }
+   .section {
+    padding-bottom: 0;
+   }
+
+   .contactContainer {
+    background-color: var(--main-blue);
+   }
+
+   h3 {
+    color: var(--main-white);
+   }
+
+   h4 {
+    color: var(--main-white);
+   }
+
+   .contactTitle {
+    color: var(--main-white);
+   }
 }
