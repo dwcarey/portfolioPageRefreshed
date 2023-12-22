@@ -79,6 +79,13 @@ table {
   --name-colour: rgb(12, 12, 53);
 }
 
+.twitterWhite {
+  display: none;
+}
+
+.projectInfoText {
+  display: none;
+}
 
 .appContainer {
   width: 100dvw;
@@ -156,7 +163,7 @@ h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-family: 'Playfair';
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--name-colour);
   text-align: center;
 }
@@ -167,7 +174,8 @@ h3 {
   margin-bottom: 4%;
   grid-column-start: 1;
   grid-column: span 3;
-
+  font-size: 1.3rem;
+  font-family: 'Playfair';
 }
 
 h4 {
@@ -176,6 +184,11 @@ h4 {
   margin-bottom: 2%;
   grid-column-start: 1;
   grid-column: span 3;
+  font-family: 'Playfair';
+}
+
+h5 {
+  font-family: 'Roboto';
 }
 
 .aboutMeText {
@@ -199,6 +212,12 @@ h4 {
   grid-column: span 3;
   align-items: center;
   justify-items: center;
+  display: flex;
+
+}
+
+.contactContainer > h3 {
+  font-size: 1rem;
 }
 
 .section {
@@ -230,6 +249,7 @@ h4 {
   "g g g"
   "h h h";
   justify-items: center;
+  margin-top: 2%;
 }
 
 .contactGoose {
@@ -240,8 +260,20 @@ h4 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.projectInfoContainer {
+  grid-column: span 3;
+  width: 90%;
+}
 
 @media only screen and (min-width: 720px) {
+
+  .contactGoose {
+    margin-bottom: 3%;
+  }
+
+  .projectInfoText {
+    display: block;
+  }
 
   body {
     margin: 0;
@@ -252,6 +284,32 @@ h4 {
 
   .socialHeader {
     display: none;
+  }
+
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 6%;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h5 {
+    margin-left: 2%;
+  }
+
+  .projectInfoContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-white);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 8%;
+    text-align: center;
   }
 
   .headerContainer {
@@ -314,7 +372,7 @@ h4 {
     background-color: var(--main-blue);
    }
 
-   h3 {
+   .contactContainer > h3 {
     color: var(--main-white);
    }
 
@@ -325,4 +383,14 @@ h4 {
    .contactTitle {
     color: var(--main-white);
    }
+
+   .twitterWhite {
+    display: flex;
+    grid-column-start: 3;
+  }
+
+  .twitterBlue {
+    display: none;
+  
+  }
 }

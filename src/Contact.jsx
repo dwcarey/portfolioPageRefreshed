@@ -3,6 +3,7 @@ import githubLogo from './assets/github-original.svg';
 import facebookLogo from './assets/facebook-original.svg';
 import twitterLogo from './assets/twitter-original.svg';
 import contactGoose from './assets/gooseContact.jpg';
+import twitterWhite from './assets/twitter-white.svg';
 
 function Contact() {
   return (
@@ -18,7 +19,8 @@ function Contact() {
         <div className='socialIconContainer'>
             <img src={githubLogo} className='socialIcon'/>
             <img src={facebookLogo} className='socialIcon'/>
-            <img src={twitterLogo} className='socialIcon'/>
+            <img src={twitterLogo} className='socialIcon twitterBlue'/>
+            <img src={twitterWhite} className='socialIcon twitterWhite'/>
         </div>
 
         <img src={contactGoose} className='contactGoose' alt="angry goose" />
